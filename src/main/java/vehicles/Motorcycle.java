@@ -5,9 +5,11 @@ public class Motorcycle extends Vehicle{
     boolean hasSidecar;
 
     public Motorcycle(String make, String model, boolean hasSidecar) {
-        super(make, model);
+        super(make, model, 120);
+        this.make = make;
+        this.model = model;
         this.hasSidecar = hasSidecar;
-        Engine engine = new MotorcycleEngine();
+        this.engine = new MotorcycleEngine();
     }
 
     @Override

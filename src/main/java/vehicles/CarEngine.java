@@ -4,7 +4,8 @@ public class CarEngine extends Engine{
 
     public CarEngine() {
 
-        fuelType = "Diesel";
-        horsepower = 120;
+        this.horsepower = 1;
+        this.fuelType = "Unleaded";
+
     }
 }

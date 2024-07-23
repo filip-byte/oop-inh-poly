@@ -2,8 +2,13 @@ package vehicles;
 
 public class Car extends Vehicle {
 
+    public Car(String make, String model, int speed) {
+        super(make, model, speed);
+        this.make = make;
+        this.model = model;
+        this.engine = new CarEngine();
+    }
 
-    @Override
     protected void accelerate() {
         String message = make + " " + model + " speed: ";
         double fuelMod = switch (this.engine.fuelType) {
@@ -17,10 +22,6 @@ public class Car extends Vehicle {
         }
     }
 
-    public Car(String make, String model) {
-        super(make, model);
 
-        Engine engine = new CarEngine();
-    }
 
 }

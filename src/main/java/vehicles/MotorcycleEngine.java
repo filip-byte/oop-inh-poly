@@ -1,9 +1,15 @@
 package vehicles;
 
 public class MotorcycleEngine extends Engine{
-
     public MotorcycleEngine() {
-        fuelType = "Unleaded";
-        horsepower = 100;
+
+        this.horsepower = 100;
+        this.fuelType = "Unleaded";
+
     }
+
+    // public MotorcycleEngine() {
+     //   fuelType = "Unleaded";
+     //   horsepower = 100;
+   // }
 }
