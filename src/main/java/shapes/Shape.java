@@ -1,7 +1,7 @@
 package shapes;
 
-abstract class Shape {
+public abstract class Shape {
 
-
+public abstract float calculateArea();
 
 }

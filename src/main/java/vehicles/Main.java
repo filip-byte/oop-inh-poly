@@ -1,6 +1,10 @@
 package vehicles;
 
+import shapes.Circle;
+import shapes.Triangle;
+import shapes.*;
 import java.lang.module.ModuleReader;
+import java.util.List;
 
 public class Main {
 
@@ -14,13 +18,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Car toyota = new Car("Toyota", "Yaris", 100);
-        Motorcycle suzuki = new Motorcycle("Suzuki", "Ninja", false);
+//        Car toyota = new Car("Toyota", "Yaris", 100);
+//        Motorcycle suzuki = new Motorcycle("Suzuki", "Ninja", false);
+//
+//
+//
+//        suzuki.start();
+//        suzuki.drive();
 
+        List<Shape> shapes = List.of(
+                new Circle(5),
+                new Rectangle(2, 5),
+                new Triangle(3, 7)
+        );
 
-
-        suzuki.start();
-        suzuki.drive();
+        for (Shape shape : shapes) {
+            System.out.println(shape.getClass().getSimpleName() + " area = " + shape.calculateArea());
+        }
 
     }
 }
